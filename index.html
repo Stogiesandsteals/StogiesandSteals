@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stogies and Steals - Premium Cigar Newsletter | Exclusive Deals & Member Community</title>
+    <meta name="description" content="Join 18,000+ cigar enthusiasts getting exclusive deals, factory exclusives, and member-only discounts. No spam, just curated savings delivered bi-weekly.">
+    
+    <!-- Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Meta Pixel Code Placeholder -->
+    <script>
+        // Replace with your Meta Pixel tracking code
+        // !function(f,b,e,v,n,t,s)
+        // {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        // n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        // if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        // n.queue=[];t=b.createElement(e);t.async=!0;
+        // t.src=v;s=b.getElementsByTagName(e)[0];
+        // s.parentNode.insertBefore(t,s)}(window, document,'script',
+        // 'https://connect.facebook.net/en_US/fbevents.js');
+        // fbq('init', 'YOUR_PIXEL_ID');
+        // fbq('track', 'PageView');
+    </script>
+    
+    <!-- Google Tag Manager Placeholder -->
+    <script>
+        // Replace with your Google Tag Manager code
+        // (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        // new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        // j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        // 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        // })(window,document,'script','dataLayer','YOUR_GTM_ID');
+    </script>
+    
+    <!-- Google Analytics Placeholder -->
+    <script async>
+        // Replace with your Google Analytics tracking code
+        // src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_ID"
+    </script>
+    <script>
+        // window.dataLayer = window.dataLayer || [];
+        // function gtag(){dataLayer.push(arguments);}
+        // gtag('js', new Date());
+        // gtag('config', 'YOUR_GA_ID');
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: #ffffff;
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #2d2d2d 100%);
+            min-height: 100vh;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            margin: 30px 0;
+            padding: 80px 40px;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 138, 0, 0.3), transparent);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #333333 100%);
+            color: #FFFFFF;
+            text-align: center;
+            padding: 120px 40px;
+            margin: 0;
+            border-radius: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(255, 138, 0, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+        }
+
+        .floating-particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .particle {
+            position: absolute;
+            background: rgba(255, 138, 0, 0.6);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+            box-shadow: 0 0 10px rgba(255, 138, 0, 0.4);
+        }
+
+        .particle:nth-child(1) {
+            width: 6px;
+            height: 6px;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .particle:nth-child(2) {
+            width: 8px;
+            height: 8px;
+            left: 20%;
+            animation-delay: 1s;
+        }
+
+        .particle:nth-child(3) {
+            width: 4px;
+            height: 4px;
+            left: 30%;
+            animation-delay: 2s;
+        }
+
+        .particle:nth-child(4) {
+            width: 10px;
+            height: 10px;
+            left: 60%;
+            animation-delay: 3s;
+        }
+
+        .particle:nth-child(5) {
+            width: 5px;
+            height: 5px;
+            left: 80%;
+            animation-delay: 4s;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .hero > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero .subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 50px;
+            opacity: 0.95;
+            font-weight: 400;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .social-proof {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .social-proof-item {
+            text-align: center;
+        }
+
+        .progress-circle {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: conic-gradient(from 0deg, #FF8A00 0%, #ffffff 100%);
+            padding: 4px;
+            animation: pulse 2s infinite;
+        }
+
+        .progress-circle::before {
+            content: '';
+            position: absolute;
+            inset: 4px;
+            border-radius: 50%;
+            background: linear-gradient(145deg, #1a1a1a 0%, #2d2d2d 100%);
+        }
+
+        .progress-number {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Inter', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #ffffff;
+            z-index: 2;
+        }
+
+        .progress-circle-fill {
+            position: absolute;
+            inset: 4px;
+            border-radius: 50%;
+            background: conic-gradient(from 0deg, #FF8A00 var(--progress, 0%), transparent var(--progress, 0%));
+            transition: --progress 2s ease-out;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .slide-in-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .slide-in-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .scale-in {
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .scale-in.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px) saturate(150%);
+            -webkit-backdrop-filter: blur(15px) saturate(150%);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .testimonial-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #FF8A00, #ffffff);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(255, 138, 0, 0.15), 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-avatar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .avatar-placeholder {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #FF8A00, #ffffff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            font-weight: bold;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 12px rgba(255, 138, 0, 0.3);
+        }
+
+        .testimonial-content {
+            position: relative;
+        }
+
+        .stars {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            filter: drop-shadow(0 2px 4px rgba(255, 138, 0, 0.3));
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #e0e0e0;
+            font-size: 1.05rem;
+        }
+
+        .testimonial-author {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .testimonial-author strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .testimonial-author span {
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        .social-proof-text {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #FF8A00 0%, #e67700 100%);
+            color: #FFFFFF;
+            padding: 18px 48px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 60px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            margin: 15px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(255, 138, 0, 0.3), 0 4px 10px rgba(0, 0, 0, 0.1);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.6s;
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(135deg, #ff9500 0%, #f56500 100%);
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 15px 35px rgba(255, 138, 0, 0.4), 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .cta-button:active {
+            transform: translateY(-2px) scale(1.01);
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #ffffff;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #FF8A00, #ffffff);
+            display: block;
+            margin: 20px auto 0;
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #cccccc;
+        }
+
+        .problem-solution {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 40px 0;
+        }
+
+        .problem, .solution {
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        .problem {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-left: 4px solid #FF8A00;
+        }
+
+        .solution {
+            background-color: rgba(255, 255, 255, 0.08);
+            border-left: 4px solid #ffffff;
+        }
+
+        .problem h3, .solution h3 {
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .value-props {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .value-prop {
+            text-align: center;
+            padding: 40px 30px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px) saturate(150%);
+            -webkit-backdrop-filter: blur(15px) saturate(150%);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .value-prop::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #FF8A00, #ffffff);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+            transform-origin: left;
+        }
+
+        .value-prop:hover::before {
+            transform: scaleX(1);
+        }
+
+        .value-prop:hover {
+            border-color: rgba(255, 138, 0, 0.3);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(255, 138, 0, 0.15), 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .value-prop-icon {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            display: block;
+            filter: drop-shadow(0 4px 8px rgba(255, 138, 0, 0.2));
+            transition: transform 0.3s ease;
+        }
+
+        .value-prop:hover .value-prop-icon {
+            transform: scale(1.1) rotateY(15deg);
+        }
+
+        .pricing-table {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .pricing-card {
+            background: linear-gradient(145deg, #ffffff 0%, #fafafa 100%);
+            border: 1px solid rgba(255, 138, 0, 0.1);
+            border-radius: 24px;
+            padding: 50px 40px;
+            text-align: center;
+            position: relative;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            color: #1a1a1a;
+        }
+
+        .pricing-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255, 138, 0, 0.02) 0%, rgba(179, 75, 49, 0.02) 100%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .pricing-card:hover::before {
+            opacity: 1;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(255, 138, 0, 0.15), 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-color: rgba(255, 138, 0, 0.3);
+        }
+
+        .pricing-card.featured {
+            border: 2px solid #FF8A00;
+            transform: scale(1.08);
+            box-shadow: 0 20px 40px rgba(255, 138, 0, 0.25), 0 8px 20px rgba(0, 0, 0, 0.15);
+            background: linear-gradient(145deg, #ffffff 0%, #fff8f4 100%);
+        }
+
+        .pricing-card.featured::before {
+            opacity: 0.5;
+        }
+
+        .pricing-badge {
+            background-color: #FF8A00;
+            color: #FFFFFF;
+            padding: 8px 20px;
+            border-radius: 20px;
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .pricing-plan {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .pricing-price {
+            font-family: 'Inter', sans-serif;
+            font-size: 4rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #1a1a1a 0%, #FF8A00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            line-height: 1;
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .pricing-period {
+            color: #666666;
+            margin-bottom: 20px;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin: 30px 0;
+        }
+
+        .pricing-features li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+            color: #333333;
+        }
+
+        .pricing-features li:before {
+            content: "✓";
+            color: #FF8A00;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .faq {
+            margin: 40px 0;
+        }
+
+        .faq-item {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #ffffff;
+        }
+
+        .faq-answer {
+            padding: 20px;
+            display: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #cccccc;
+        }
+
+        .faq-toggle {
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .footer-cta {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
+            color: #FFFFFF;
+            text-align: center;
+            padding: 100px 40px;
+            margin: 40px 0 0 0;
+            border-radius: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(255, 138, 0, 0.1) 0%, transparent 70%);
+        }
+
+        .footer-cta > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer-cta h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 30px;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .footer-cta p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .trust-indicators {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            text-align: center;
+            color: #666;
+        }
+
+        .trust-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #FF8A00;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 80px 20px;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .section {
+                margin: 20px 0;
+                padding: 60px 20px;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+
+            .problem-solution {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .social-proof {
+                gap: 20px;
+            }
+
+            .social-proof-number {
+                font-size: 2rem;
+            }
+
+            .pricing-table {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-card.featured {
+                transform: scale(1.02);
+            }
+
+            .pricing-price {
+                font-size: 3rem;
+            }
+
+            .footer-cta {
+                padding: 80px 20px;
+            }
+
+            .footer-cta h2 {
+                font-size: 2.2rem;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .cta-button {
+                padding: 16px 32px;
+                font-size: 0.9rem;
+            }
+
+            .pricing-price {
+                font-size: 2.5rem;
+            }
+
+            .footer-cta h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) Placeholder -->
+    <noscript>
+        <!-- Replace with your Google Tag Manager noscript code -->
+        <!-- <iframe src="https://www.googletagmanager.com/ns.html?id=YOUR_GTM_ID"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe> -->
+    </noscript>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="floating-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <div class="container">
+            <h1>Stop Missing Out on Exclusive Cigar Deals</h1>
+            <p class="subtitle">Join 18,000+ cigar enthusiasts getting curated deals, factory exclusives, and member-only discounts delivered straight to your inbox</p>
+            
+            <div class="social-proof">
+                <div class="social-proof-item">
+                    <div class="progress-circle" data-target="18000">
+                        <div class="progress-circle-fill"></div>
+                        <div class="progress-number">0</div>
+                    </div>
+                    <div class="social-proof-text">Newsletter Subscribers</div>
+                </div>
+                <div class="social-proof-item">
+                    <div class="progress-circle" data-target="20000">
+                        <div class="progress-circle-fill"></div>
+                        <div class="progress-number">0</div>
+                    </div>
+                    <div class="social-proof-text">Social Followers</div>
+                </div>
+                <div class="social-proof-item">
+                    <div class="progress-circle" data-target="1000">
+                        <div class="progress-circle-fill"></div>
+                        <div class="progress-number">$0</div>
+                    </div>
+                    <div class="social-proof-text">In Member Savings</div>
+                </div>
+            </div>
+            
+            <a href="#pricing" class="cta-button">Get Exclusive Access Now</a>
+            <p style="margin-top: 15px; opacity: 0.8; font-size: 0.9rem;">Cancel anytime • No spam • Only 2 emails per month</p>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section class="section fade-in">
+        <div class="container">
+            <h2 class="section-title fade-in">Tired of Missing the Best Cigar Deals?</h2>
+            <div class="problem-solution">
+                <div class="problem slide-in-left">
+                    <h3>❌ The Problem You Face</h3>
+                    <ul style="margin-top: 15px; line-height: 1.8;">
+                        <li>Inbox flooded with spam emails from retailers</li>
+                        <li>Hours wasted searching for legitimate deals</li>
+                        <li>Missing out on limited-time factory exclusives</li>
+                        <li>Paying full price while others get insider discounts</li>
+                        <li>No trusted source for curated recommendations</li>
+                    </ul>
+                </div>
+                
+                <div class="solution slide-in-right">
+                    <h3>✅ Our Solution</h3>
+                    <ul style="margin-top: 15px; line-height: 1.8;">
+                        <li>Only 2 curated emails per month - NO SPAM</li>
+                        <li>Deals vetted by cigar experts and community</li>
+                        <li>Exclusive partnerships with top retailers</li>
+                        <li>Factory-direct offers not available elsewhere</li>
+                        <li>Private community of passionate aficionados</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section class="section fade-in">
+        <div class="container">
+            <h2 class="section-title fade-in">What Makes Stogies and Steals Different?</h2>
+            <p class="section-subtitle fade-in">We're not just another newsletter - we're your insider connection to the cigar world</p>
+            
+            <div class="value-props">
+                <div class="value-prop scale-in">
+                    <div class="value-prop-icon">🎯</div>
+                    <h3 style="color: #ffffff; margin-bottom: 15px;">Curated Exclusives</h3>
+                    <p style="color: #cccccc;">Hand-picked deals from partnerships with Neptune Cigars, Mardo Cigars, El Mago Cigars, and many more premium retailers.</p>
+                </div>
+                
+                <div class="value-prop scale-in">
+                    <div class="value-prop-icon">💰</div>
+                    <h3 style="color: #ffffff; margin-bottom: 15px;">Guaranteed Savings</h3>
+                    <p style="color: #cccccc;">Members typically save hundreds to thousands annually through exclusive discount codes and member-only pricing.</p>
+                </div>
+                
+                <div class="value-prop scale-in">
+                    <div class="value-prop-icon">🏭</div>
+                    <h3 style="color: #ffffff; margin-bottom: 15px;">Factory Direct Access</h3>
+                    <p style="color: #cccccc;">Be first to access limited factory releases and pre-market cigars not available to the general public.</p>
+                </div>
+                
+                <div class="value-prop scale-in">
+                    <div class="value-prop-icon">👥</div>
+                    <h3 style="color: #ffffff; margin-bottom: 15px;">Private Community</h3>
+                    <p style="color: #cccccc;">Connect with fellow enthusiasts, share reviews, and get insider tips from seasoned collectors and newcomers alike.</p>
+                </div>
+                
+                <div class="value-prop scale-in">
+                    <div class="value-prop-icon">📧</div>
+                    <h3 style="color: #ffffff; margin-bottom: 15px;">No Spam Promise</h3>
+                    <p style="color: #cccccc;">Just 2 value-packed emails monthly. We respect your inbox and only send deals worth your attention.</p>
+                </div>
+                
+                <div class="value-prop scale-in">
+                    <div class="value-prop-icon">⚡</div>
+                    <h3 style="color: #ffffff; margin-bottom: 15px;">Time-Sensitive Alerts</h3>
+                    <p style="color: #cccccc;">Get notified of flash sales and limited-time offers before they sell out to the general public.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section fade-in" id="pricing">
+        <div class="container">
+            <h2 class="section-title fade-in">Choose Your Access Level</h2>
+            <p class="section-subtitle fade-in">All plans include the same exclusive deals and community access</p>
+            
+            <div class="pricing-table">
+                <div class="pricing-card scale-in">
+                    <div class="pricing-plan">Monthly</div>
+                    <div class="pricing-price">$5</div>
+                    <div class="pricing-period">per month</div>
+                    <ul class="pricing-features">
+                        <li>2 curated deal emails monthly</li>
+                        <li>Exclusive discount codes</li>
+                        <li>Member-only pricing</li>
+                        <li>Private community access</li>
+                        <li>Factory exclusive products</li>
+                        <li>Cancel anytime</li>
+                    </ul>
+                    <a href="#" onclick="handleCheckout('monthly')" class="cta-button">Start Monthly Plan</a>
+                </div>
+                
+                <div class="pricing-card featured scale-in">
+                    <div class="pricing-badge">Best Value</div>
+                    <div class="pricing-plan">Yearly</div>
+                    <div class="pricing-price">$49</div>
+                    <div class="pricing-period">per year (Save $11)</div>
+                    <ul class="pricing-features">
+                        <li>2 curated deal emails monthly</li>
+                        <li>Exclusive discount codes</li>
+                        <li>Member-only pricing</li>
+                        <li>Private community access</li>
+                        <li>Factory exclusive products</li>
+                        <li>Priority deal notifications</li>
+                        <li>Annual bonus content</li>
+                    </ul>
+                    <a href="#" onclick="handleCheckout('yearly')" class="cta-button">Choose Yearly Plan</a>
+                </div>
+                
+                <div class="pricing-card scale-in">
+                    <div class="pricing-badge">Most Exclusive</div>
+                    <div class="pricing-plan">Lifetime</div>
+                    <div class="pricing-price">$299</div>
+                    <div class="pricing-period">one-time payment</div>
+                    <ul class="pricing-features">
+                        <li>Lifetime access to all deals</li>
+                        <li>VIP community status</li>
+                        <li>First access to new partnerships</li>
+                        <li>Exclusive lifetime member events</li>
+                        <li>Direct line to deal sourcing team</li>
+                        <li>Grandfather protection on pricing</li>
+                        <li>Legacy member recognition</li>
+                    </ul>
+                    <a href="#" onclick="handleCheckout('lifetime')" class="cta-button">Get Lifetime Access</a>
+                </div>
+            </div>
+            
+            <div class="trust-indicators">
+                <div class="trust-item">
+                    <div class="trust-icon">🔒</div>
+                    <div>Secure Payment</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">↩️</div>
+                    <div>Cancel Anytime</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">⚡</div>
+                    <div>Instant Access</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="section fade-in">
+        <div class="container">
+            <h2 class="section-title fade-in">What Our Members Are Saying</h2>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card scale-in">
+                    <div class="testimonial-avatar">
+                        <div class="avatar-placeholder">MT</div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"Saved over $400 in my first three months. The Neptune Cigars exclusive alone paid for my annual membership."</p>
+                        <div class="testimonial-author">
+                            <strong>Marcus T.</strong>
+                            <span>Premium Member</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card scale-in">
+                    <div class="testimonial-avatar">
+                        <div class="avatar-placeholder">JR</div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"Finally, a newsletter that doesn't spam me daily. Quality deals, quality community, quality experience."</p>
+                        <div class="testimonial-author">
+                            <strong>Jennifer R.</strong>
+                            <span>Yearly Subscriber</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card scale-in">
+                    <div class="testimonial-avatar">
+                        <div class="avatar-placeholder">DM</div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"Got access to factory exclusives I couldn't find anywhere else. The community knowledge is incredible."</p>
+                        <div class="testimonial-author">
+                            <strong>David M.</strong>
+                            <span>Lifetime Member</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px; padding: 30px; background-color: rgba(255, 255, 255, 0.05); border-radius: 8px;">
+                <h3 style="color: #ffffff;">Trusted Retail Partners</h3>
+                <p style="margin: 15px 0; font-size: 1.1rem; color: #cccccc;">We've established exclusive partnerships with industry leaders:</p>
+                <p style="font-weight: bold; font-size: 1.2rem; color: #FF8A00;">Neptune Cigars • Mardo Cigars • El Mago Cigars</p>
+                <p style="margin-top: 10px; font-style: italic; color: #cccccc;">+ Many more partnerships in development</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        How much can I really save with membership?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our members typically save hundreds to thousands annually. Many report their membership paying for itself within the first month through exclusive discount codes and member-only pricing. The exact savings depend on your purchasing habits, but we focus on deals that provide genuine value.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        What makes this different from other cigar newsletters?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We only send 2 emails per month (no spam), focus exclusively on curated deals from verified partners, provide access to factory exclusives not available elsewhere, and include private community access. Quality over quantity is our philosophy.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        Can I really cancel anytime?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. Monthly and yearly subscriptions can be cancelled at any time with no penalties or fees. You'll continue to receive benefits through the end of your current billing period.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        What's included in the private community?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our private community includes deal discussions, cigar reviews from members, exclusive Q&As with industry experts, early access to partnership announcements, and networking with fellow enthusiasts across all experience levels.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        Are the factory exclusives really exclusive?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes. We work directly with manufacturers and established retail partners to secure products and pricing not available to the general public. Many of these deals are limited quantity and time-sensitive.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        What if I'm new to premium cigars?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Perfect! Our community welcomes newcomers. We include educational content, beginner-friendly recommendations, and our community members are always willing to help newcomers learn and discover new favorites.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="footer-cta">
+        <div class="container">
+            <h2>Don't Let Another Exclusive Deal Pass You By</h2>
+            <p>Join 18,000+ smart cigar enthusiasts who never miss a premium deal</p>
+            <a href="#pricing" class="cta-button">Secure Your Membership Now</a>
+            <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
+                ✅ Instant access to member community<br>
+                ✅ No spam guarantee<br>
+                ✅ Cancel anytime<br>
+                ✅ Start saving immediately
+            </p>
+        </div>
+    </section>
+
+    <script>
+        // FAQ Toggle Functionality
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const toggle = element.querySelector('.faq-toggle');
+            
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+                toggle.textContent = '+';
+            } else {
+                // Close all other FAQs
+                document.querySelectorAll('.faq-answer').forEach(ans => ans.style.display = 'none');
+                document.querySelectorAll('.faq-toggle').forEach(tog => tog.textContent = '+');
+                
+                // Open clicked FAQ
+                answer.style.display = 'block';
+                toggle.textContent = '−';
+            }
+        }
+
+        // Stripe Checkout Integration
+        function handleCheckout(plan) {
+            const checkoutUrls = {
+                monthly: 'https://buy.stripe.com/00w6oH84ca4EaVZcJH5Vu07',
+                yearly: 'https://buy.stripe.com/bJe6oHfwE4Kke8b3975Vu06',
+                lifetime: 'https://buy.stripe.com/4gMbJ12JS6Ss7JN10Z5Vu05'
+            };
+            
+            // Track conversion event for Meta Pixel
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'InitiateCheckout', {
+                    value: plan === 'monthly' ? 5 : plan === 'yearly' ? 49 : 299,
+                    currency: 'USD',
+                    content_name: `Stogies and Steals ${plan} Subscription`
+                });
+            }
+            
+            // Track conversion for Google Analytics
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'begin_checkout', {
+                    currency: 'USD',
+                    value: plan === 'monthly' ? 5 : plan === 'yearly' ? 49 : 299,
+                    items: [{
+                        item_id: `stogies-steals-${plan}`,
+                        item_name: `Stogies and Steals ${plan} Subscription`,
+                        category: 'Subscription',
+                        quantity: 1,
+                        price: plan === 'monthly' ? 5 : plan === 'yearly' ? 49 : 299
+                    }]
+                });
+            }
+            
+            // Add loading state to clicked button
+            const clickedButton = event.target;
+            addButtonLoadingState(clickedButton);
+            
+            // Redirect to Stripe checkout after loading animation
+            setTimeout(() => {
+                window.location.href = checkoutUrls[plan];
+            }, 1000);
+        }
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    // Animate progress circles when they come into view
+                    if (entry.target.classList.contains('social-proof')) {
+                        animateProgressCircles();
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in, .social-proof');
+            animatedElements.forEach(el => observer.observe(el));
+        });
+
+        // Animate progress circles
+        function animateProgressCircles() {
+            const circles = document.querySelectorAll('.progress-circle');
+            circles.forEach((circle, index) => {
+                const target = parseInt(circle.dataset.target);
+                const numberEl = circle.querySelector('.progress-number');
+                const isPrice = numberEl.textContent.includes('$');
+                
+                let current = 0;
+                const increment = target / 100;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    
+                    if (isPrice) {
+                        numberEl.textContent = '$' + Math.floor(current) + (target >= 1000 ? 's' : '');
+                    } else {
+                        numberEl.textContent = Math.floor(current).toLocaleString() + '+';
+                    }
+                }, 20);
+            });
+        }
+
+        // Add loading state to buttons
+        function addButtonLoadingState(button) {
+            const originalText = button.textContent;
+            button.textContent = 'Loading...';
+            button.style.opacity = '0.7';
+            button.style.pointerEvents = 'none';
+            
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.style.opacity = '1';
+                button.style.pointerEvents = 'auto';
+            }, 1500);
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId !== '#') {
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Track scroll depth for analytics
+        let maxScroll = 0;
+        window.addEventListener('scroll', function() {
+            const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+            
+            if (scrollPercent > maxScroll) {
+                maxScroll = scrollPercent;
+                
+                // Track milestone scroll depths
+                if (maxScroll >= 25 && typeof gtag !== 'undefined') {
+                    gtag('event', 'scroll', { percent_scrolled: 25 });
+                }
+                if (maxScroll >= 50 && typeof gtag !== 'undefined') {
+                    gtag('event', 'scroll', { percent_scrolled: 50 });
+                }
+                if (maxScroll >= 75 && typeof gtag !== 'undefined') {
+                    gtag('event', 'scroll', { percent_scrolled: 75 });
+                }
+                if (maxScroll >= 90 && typeof gtag !== 'undefined') {
+                    gtag('event', 'scroll', { percent_scrolled: 90 });
+                }
+            }
+        });
+
+        // Track time on page
+        const startTime = Date.now();
+        window.addEventListener('beforeunload', function() {
+            const timeOnPage = Math.round((Date.now() - startTime) / 1000);
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'timing_complete', {
+                    name: 'time_on_page',
+                    value: timeOnPage
+                });
+            }
+        });
+    </script>
+</body>
+</html>
