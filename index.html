@@ -36,6 +36,15 @@
         // })(window,document,'script','dataLayer','YOUR_GTM_ID');
     </script>
     
+    <!-- Vercel Analytics -->
+    <script type="module">
+        import { inject, track } from './node_modules/@vercel/analytics/dist/index.js';
+        inject();
+        
+        // Make track function globally available
+        window.vaTrack = track;
+    </script>
+
     <!-- Google Analytics Placeholder -->
     <script async>
         // Replace with your Google Analytics tracking code
@@ -1231,6 +1240,14 @@
                 yearly: 'https://buy.stripe.com/bJe6oHfwE4Kke8b3975Vu06',
                 lifetime: 'https://buy.stripe.com/4gMbJ12JS6Ss7JN10Z5Vu05'
             };
+            
+            // Track conversion event for Vercel Analytics
+            if (typeof window.vaTrack !== 'undefined') {
+                window.vaTrack('checkout_initiated', {
+                    plan: plan,
+                    value: plan === 'monthly' ? 5 : plan === 'yearly' ? 49 : 299
+                });
+            }
             
             // Track conversion event for Meta Pixel
             if (typeof fbq !== 'undefined') {
